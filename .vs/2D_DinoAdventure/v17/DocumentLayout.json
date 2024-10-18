@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\2D_DinoAdventure\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|d:\\projects\\2d_dinoadventure\\assets\\scripts\\02_running\\jumpmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\02_running\\jumpmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|D:\\Projects\\2D_DinoAdventure\\assets\\scripts\\unity ads\\adsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unity ads\\adsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|D:\\Projects\\2D_DinoAdventure\\assets\\scripts\\unity ads\\adsinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unity ads\\adsinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|D:\\Projects\\2D_DinoAdventure\\assets\\scripts\\unity ads\\adsbanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unity ads\\adsbanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdsInit.cs",
+              "DocumentMoniker": "D:\\Projects\\2D_DinoAdventure\\Assets\\Scripts\\Unity Ads\\AdsInit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Unity Ads\\AdsInit.cs",
+              "ToolTip": "D:\\Projects\\2D_DinoAdventure\\Assets\\Scripts\\Unity Ads\\AdsInit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Unity Ads\\AdsInit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:09:13.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdsBanner.cs",
+              "DocumentMoniker": "D:\\Projects\\2D_DinoAdventure\\Assets\\Scripts\\Unity Ads\\AdsBanner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Unity Ads\\AdsBanner.cs",
+              "ToolTip": "D:\\Projects\\2D_DinoAdventure\\Assets\\Scripts\\Unity Ads\\AdsBanner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Unity Ads\\AdsBanner.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:06:03.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JumpManager.cs",
+              "DocumentMoniker": "D:\\Projects\\2D_DinoAdventure\\Assets\\Scripts\\02_Running\\JumpManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\02_Running\\JumpManager.cs",
+              "ToolTip": "D:\\Projects\\2D_DinoAdventure\\Assets\\Scripts\\02_Running\\JumpManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\02_Running\\JumpManager.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAiwFIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:03:22.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdsManager.cs",
+              "DocumentMoniker": "D:\\Projects\\2D_DinoAdventure\\Assets\\Scripts\\Unity Ads\\AdsManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Unity Ads\\AdsManager.cs",
+              "ToolTip": "D:\\Projects\\2D_DinoAdventure\\Assets\\Scripts\\Unity Ads\\AdsManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Unity Ads\\AdsManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T05:29:16.862Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
