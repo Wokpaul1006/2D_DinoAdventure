@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\Projects\\2D_DinoAdventure\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|D:\\Projects\\2D_DinoAdventure\\assets\\scripts\\02_running\\jumpmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|d:\\projects\\2d_dinoadventure\\assets\\scripts\\02_running\\jumpmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\02_running\\jumpmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|d:\\projects\\2d_dinoadventure\\assets\\scripts\\unity ads\\adsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|D:\\Projects\\2D_DinoAdventure\\assets\\scripts\\unity ads\\adsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unity ads\\adsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|d:\\projects\\2d_dinoadventure\\assets\\scripts\\unity ads\\adsinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|D:\\Projects\\2D_DinoAdventure\\assets\\scripts\\unity ads\\adsinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7F98DBA-4F25-FC96-21FF-C0C72E7C70F1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unity ads\\adsinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,8 +38,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Unity Ads\\AdsInit.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:09:13.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T06:09:13.629Z"
             },
             {
               "$type": "Document",
@@ -61,7 +60,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\02_Running\\JumpManager.cs",
               "ToolTip": "D:\\Projects\\2D_DinoAdventure\\Assets\\Scripts\\02_Running\\JumpManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\02_Running\\JumpManager.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAqwFIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAiwFIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T06:03:22.774Z",
               "EditorCaption": ""
@@ -76,8 +75,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Unity Ads\\AdsManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T05:29:16.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T05:29:16.862Z"
             }
           ]
         }
