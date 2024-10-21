@@ -6,8 +6,8 @@ using static UnityEngine.Advertisements.Advertisement;
 
 public class AdsBanner : MonoBehaviour
 {
+    private AdsManager adsMN;
     [SerializeField] BannerPosition _bannerPosition = BannerPosition.BOTTOM_CENTER;
-
     [SerializeField] string _androidAdUnitId = "Banner_Android";
     [SerializeField] string _iOSAdUnitId = "Banner_iOS";
     string _adUnitId = null; // This will remain null for unsupported platforms.
@@ -23,8 +23,7 @@ public class AdsBanner : MonoBehaviour
 
         // Set the banner position:
         Advertisement.Banner.SetPosition(_bannerPosition);
-
-        LoadBanner();
+        adsMN = GameObject.Find("AdsMN").GetComponent<AdsManager>();
     }
 
     // Implement a method to call when the Load Banner button is clicked:
@@ -45,7 +44,7 @@ public class AdsBanner : MonoBehaviour
     void OnBannerLoaded()
     {
         ShowBannerAd();
-
+        Debug.Log("IN OnBannerLoad");
         //// Configure the Show Banner button to call the ShowBannerAd() method when clicked:
         //_showBannerButton.onClick.AddListener(ShowBannerAd);
         //// Configure the Hide Banner button to call the HideBannerAd() method when clicked:
@@ -76,6 +75,7 @@ public class AdsBanner : MonoBehaviour
 
         // Show the loaded Banner Ad Unit:
         Advertisement.Banner.Show(_adUnitId, options);
+        print("in Banner show done");
     }
 
     // Implement a method to call when the Hide Banner button is clicked:

@@ -9,9 +9,12 @@ public class JumpManager : MonoBehaviour
 {
     //No. of Game" #01
     //Rule:
-    //Player jump to avoid obstacles, ì hit obstacle, game end.
+    //Player jump to avoid obstacles, ì hit obstacle, game end. (Arena Mode)
 
+    //General
     [SerializeField] Canvas MenuCan, GameplayCan;
+
+    //Menu Zone
 
     //Main menu canvas & Panels
     [SerializeField] GameObject optionPanel;
@@ -41,7 +44,14 @@ public class JumpManager : MonoBehaviour
     [SerializeField] Text currentTimeSurvive;
     [SerializeField] GameObject obstacleSpawner;
 
+    //Gameplay Zone
     private Vector3 spawnerPos;
+    [SerializeField] Text curScoreArenaTxt;
+    [SerializeField] Text curLevelArenaTxt;
+
+    private sbyte curScoreArena;
+    private sbyte curLevelArena;
+
     private int objApparance;
     private int ingameScore;
     private int timeSurvive;
@@ -67,9 +77,35 @@ public class JumpManager : MonoBehaviour
         DecideTimeSpawn(curLevel);
         StartCoroutine(SpawnClound());
         StartCoroutine(GroundMovement());
-        StartCoroutine(OnWaitToSpawnObstacle(delaySpawnTime));
-
         pausePnl = GameObject.Find("CAN_Pause").GetComponent<PauseSC>();
+    }
+
+    private void Update()
+    {
+        if(gameStage == 1)
+        {
+            HandelInputTouch();
+        }
+    }
+    private void HandelInputTouch()
+    {
+        if (Input.touchCount > 0)
+        {
+            // Get the first touch (can handle multiple touches as well)
+            Touch touch = Input.GetTouch(0);
+
+            // Handle different touch phases
+            switch (touch.phase)
+            {
+                // Touch has just begun
+                case TouchPhase.Began:
+                    OnJump();
+                    break;
+                // Finger lifted from the screen
+                case TouchPhase.Ended:
+                    break;
+            }
+        }
     }
     private void SettingStartStats()
     {
@@ -136,21 +172,22 @@ public class JumpManager : MonoBehaviour
         {
             dino.isGrounded = false;
             dino.allowJump = true;
+        }else if(dino.isGrounded == false && dino.allowJump == false)
+        {
+            dino.isGrounded = true;
+            dino.allowDoubleJump = true;
         }
     }
     private IEnumerator OnWaitToSpawnObstacle(float delay)
     {
-        if(gameStage == 1)
-        {
-            yield return new WaitForSeconds(delaySpawnTime);
-            if (curLevel < 10) objApparance = Random.Range(0, listObts.Count - 3);
-            else objApparance = Random.Range(0, listObts.Count);
+        yield return new WaitForSeconds(delaySpawnTime);
+        if (curLevel < 10) objApparance = Random.Range(0, listObts.Count - 3);
+        else objApparance = Random.Range(0, listObts.Count);
 
-            if (objApparance == 10 || objApparance == 9 || objApparance == 11) Instantiate(listObts[objApparance], new Vector3(spawnerPos.x, Random.Range(-2, 2), spawnerPos.z), Quaternion.Euler(0, 180, 0));
-            else Instantiate(listObts[objApparance], spawnerPos, Quaternion.identity);
+        if (objApparance == 10 || objApparance == 9 || objApparance == 11) Instantiate(listObts[objApparance], new Vector3(spawnerPos.x, Random.Range(-2, 2), spawnerPos.z), Quaternion.Euler(0, 180, 0));
+        else Instantiate(listObts[objApparance], spawnerPos, Quaternion.identity);
 
-            StartCoroutine(OnWaitToSpawnObstacle(delay));
-        }
+        StartCoroutine(OnWaitToSpawnObstacle(delay));
     }
 
     private void UpdtatePlayerPrefs()
@@ -167,8 +204,8 @@ public class JumpManager : MonoBehaviour
         highestScoreToCompare = PlayerPrefs.GetInt("PHighestScore");
 
         //Update total score
-        newTotalScore = currenTotalScore + ingameScore;
-        PlayerPrefs.SetInt("PTotalScore", ingameScore); //total of score that player have earn
+        newTotalScore = currenTotalScore + curScoreArena;
+        PlayerPrefs.SetInt("PTotalScore", newTotalScore); //total of score that player have earn
 
         //Update highest score
         if (highestScoreToCompare < ingameScore) PlayerPrefs.SetInt("PHighestScore", ingameScore); //highest score that player can reach of all games
@@ -266,19 +303,22 @@ public class JumpManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         coundownNumber--;
+        HandleCoundownStartText();
         if (coundownNumber <= 0)
         {
             UpdateGameState(1);
             StopCoroutine(StartCoundown());
+            StartCoroutine(OnWaitToSpawnObstacle(delaySpawnTime));
         }
         StartCoroutine(StartCoundown());
     }
-
     public void BackToHome()
     {
         gameStage = -1;
         GameplayCan.gameObject.SetActive(false);
         MenuCan.gameObject.SetActive(true);
+
+        UpdtatePlayerPrefs();
     }
 
     #region UIs Mainmenus

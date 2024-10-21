@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Common\CloudSC.cs" />
     <Compile Include="Assets\Scripts\Common\PauseSC.cs" />
     <Compile Include="Assets\Scripts\Unity Ads\AdsInter.cs" />
+    <Compile Include="Assets\OptionSC.cs" />
     <Compile Include="Assets\Scripts\01_MainMenu\CreditPanelSC.cs" />
     <Compile Include="Assets\Scripts\Common\SceneSC.cs" />
     <Compile Include="Assets\Scripts\Common\SettingSC.cs" />

@@ -765,7 +765,6 @@ GameObject:
   - component: {fileID: 658685152}
   - component: {fileID: 658685151}
   - component: {fileID: 658685150}
-  - component: {fileID: 658685149}
   m_Layer: 0
   m_Name: AdsMN
   m_TagString: Untagged
@@ -773,21 +772,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &658685149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658685148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14caa151259ace4468aa0abfe236f5b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bannerPosition: 4
-  _androidAdUnitId: Banner_Android
-  _iOSAdUnitId: Banner_iOS
 --- !u!114 &658685150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,9 +798,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e0febe1b56ebe41a37664b14179e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _androidGameId: 5706430
+  _androidGameId: 5713495
   _iOSGameId: 
-  _testMode: 1
+  _testMode: 0
 --- !u!114 &658685152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -830,9 +814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDestroyOnLoad: 0
-  bannerAds: {fileID: 0}
-  adsInit: {fileID: 0}
-  interAds: {fileID: 0}
+  adsStatusTxt: {fileID: 0}
 --- !u!4 &658685153
 Transform:
   m_ObjectHideFlags: 0
@@ -845,7 +827,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1276135437}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &765382460
@@ -1179,6 +1162,53 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1276135436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1276135437}
+  - component: {fileID: 1276135438}
+  m_Layer: 0
+  m_Name: BannerAdsMN
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1276135437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276135436}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 658685153}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1276135438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276135436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14caa151259ace4468aa0abfe236f5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bannerPosition: 4
+  _androidAdUnitId: Banner_Android
+  _iOSAdUnitId: Banner_iOS
 --- !u!114 &1319715845 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2515785480219751215, guid: b5dd94fbbaa864f47b47892cbe425e5a, type: 3}
@@ -1394,7 +1424,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1593601783}
   - component: {fileID: 1593601784}
-  - component: {fileID: 1593601785}
   m_Layer: 0
   m_Name: LoadManager
   m_TagString: Untagged
@@ -1431,21 +1460,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadSlide: {fileID: 1814955168}
   loadTips: {fileID: 1319715845}
---- !u!114 &1593601785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593601780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34e0febe1b56ebe41a37664b14179e03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _androidGameId: 5713495
-  _iOSGameId: 
-  _testMode: 0
 --- !u!1 &1672708675
 GameObject:
   m_ObjectHideFlags: 0
